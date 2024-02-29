@@ -1,0 +1,35 @@
+###
+GET {{host}}/api/moomins?pageNumber=1&pageSize=2
+
+###
+GET {{host}}/api/moomins/1
+
+###
+GET {{host}}/api/moomins/2
+
+###
+GET {{host}}/api/moomins/3
+
+###
+GET {{host}}/api/moomins/4
+
+###
+POST {{host}}/api/moomins
+Content-Type: application/json
+
+{
+  "name": "Moomintroll",
+  "gender": "male"
+}
+
+###
+PUT {{host}}/api/moomins/4
+Content-Type: application/json
+
+{
+  "name": "Moomin",
+  "gender": "male"
+}
+
+###
+DELETE {{host}}/api/moomins/1
